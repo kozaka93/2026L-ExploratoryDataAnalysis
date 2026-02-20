@@ -90,13 +90,13 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>wykład</td>
     <td>Nie popełniaj tych błędów</td>
-    <td>PD2 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
     <td>R: ggplot2 - mapa Polski, patchwork, ggrepel</td>
-    <td></td>
+    <td>PD2 (6p)</td>
   </tr>
   <tr>
     <td rowspan="2">08-04</td>
@@ -133,13 +133,13 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>wykład</td>
     <td>Wizualizacja grafów, tekst</td>
-    <td>PD 3 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
     <td>R: grafy, tekst</td>
-    <td></td>
+    <td>PD 3 (6p)</td>
   </tr>
   <tr>
     <td rowspan="2">29-04</td>
