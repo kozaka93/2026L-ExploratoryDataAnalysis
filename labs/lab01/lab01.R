@@ -73,13 +73,13 @@ starwars_new <- starwars[, c(1, 2, 3, 4, 5, 7, 8)]
 
 
 
-# Zadanie 1 ---------------------------------------------------------------
+# Zadanie 4.1 -------------------------------------------------------------
 # Używając funkcji z pakietu dplyr() wybierz te postacie, których gatunek 
 # to Droid, a ich wysokość jest większa niż 100.
 
 
 
-# Zadanie 2 ---------------------------------------------------------------
+# Zadanie 4.2 -------------------------------------------------------------
 # Używając funkcji z pakietu dplyr() wybierz te postacie, które nie mają 
 # określonego koloru włosów.
 
@@ -88,7 +88,7 @@ starwars_new <- starwars[, c(1, 2, 3, 4, 5, 7, 8)]
 
 
 
-# Zadanie 3 ---------------------------------------------------------------
+# Zadanie 4.3 -------------------------------------------------------------
 # Używając funkcji z pakietu dplyr() wybierz postać o największej masie.
 
 
