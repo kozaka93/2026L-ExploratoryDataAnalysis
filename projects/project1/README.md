@@ -61,6 +61,13 @@ Aby uzyskać punkty za realizację kamieni miliowych zespół jest zobowiązany 
 </tbody>
 </table>
 
+## Zajęcia projektowe, Lista TO DO
+
+- [ ] Wpisać zespół do pliku PROJEKT1/ZESPOLY.xlsx (do dnia 04.03.2026)
+- [ ] Zapisać się na konsultacje projektowe - wpisać swój numer zespołu w pliku PROJEKT1/KAMIENIE MILOWE.xlsx (proszę zwrócić uwagę na zakładki i daty!)
+- [ ] Przed zajęciami projektowymi przygotować roboczą prezentację w formacie .pdf
+- [ ] Przed zajęciami projektowymi umieścić prezentację w folderze zgodnym z opisem na MS Teams
+
 ## Ocena
 
 Za projekt można otrzymać od 0 do 24 punktów, z czego:
@@ -74,19 +81,6 @@ Za projekt można otrzymać od 0 do 24 punktów, z czego:
 Podczas prezentacji z każdego zespołu musi być obecna co najmniej jedna osoba. Nieobecność całego zespołu podczas sesji plakatowej skutkuje brakiem punktów za prezentację (-4 pkt) oraz możliwością zdobycia maksymalnie 80% za plakat (12 pkt).
 
 Ocena z projektu jest wystawiana na podstawie agregacji ocen zaproponowanych przez wszystkich prowadzących zajęcia projektowe.
-
-## Zajęcia projektowe, Lista TO DO
-
-- [ ] Wpisać zespół do pliku PROJEKT1/ZESPOLY.xlsx (do dnia 04.03.2026)
-- [ ] Zapisać się na konsultacje projektowe - wpisać swój numer zespołu w pliku PROJEKT1/KAMIENIE MILOWE.xlsx (proszę zwrócić uwagę na zakładki i daty!)
-- [ ] Przed zajęciami projektowymi przygotować roboczą prezentację w formacie .pdf
-- [ ] Przed zajęciami projektowymi umieścić prezentację w folderze zgodnym z opisem na MS Teams
-
-## Oddanie Projektu, Lista TO DO
-- [ ] Przygotować plakat w formacie A2
-- [ ] Wydrukować plakat i przynieść na oddanie (15-04-2026)
-- [ ] Przygotować folder zawierający opisane w treści wymagania
-- [ ] Plakat powinien zawierać tytuł, minimum 2 wykresy, autorów i źródła (źródła mogą być jako linki lub kody QR)
 
 ## Przykłady danych
 
@@ -155,6 +149,12 @@ Na oddanie projektu (15-04-2026) należy przynieść wydrukowany plakat. Proszę
 Uwagi:
 
 -  na plakacie powinien znaleźć się podpis identyfikujący autorów oraz źródło/a danych
+
+## Oddanie Projektu, Lista TO DO
+- [ ] Przygotować plakat w formacie A2
+- [ ] Wydrukować plakat i przynieść na oddanie (15-04-2026)
+- [ ] Przygotować folder zawierający opisane w treści wymagania
+- [ ] Plakat powinien zawierać tytuł, minimum 2 wykresy, autorów i źródła (źródła mogą być jako linki lub kody QR)
 
 ## Materiały
 
