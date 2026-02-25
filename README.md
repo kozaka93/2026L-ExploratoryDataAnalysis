@@ -24,13 +24,13 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">25-02</td>
     <td>2</td>
     <td>wykład</td>
-    <td>Wstęp, zasady zaliczenia, eksploracja danych, narzędzia, przedstawienie tematyki projektów</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/lectures/L1-intro.pdf">Wstęp, zasady zaliczenia, eksploracja danych, narzędzia,</a> <a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/projects/project1">przedstawienie tematyki projektów</a></td>
     <td></td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: wstęp, powtórka R, wstęp dplyr</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab01">R: wstęp, powtórka R, wstęp dplyr</a></td>
     <td></td>
   </tr>
   <tr>
