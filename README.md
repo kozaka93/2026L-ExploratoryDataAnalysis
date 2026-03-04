@@ -37,7 +37,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">04-03</td>
     <td>2</td>
     <td>wykład</td>
-    <td>Sposoby badania rozkładu jednej zmiennej (ilościowej i jakościowej), sposoby badania rozkładu dwóch i więcej zmiennych.</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/lectures/L2-plots">Sposoby badania rozkładu jednej zmiennej (ilościowej i jakościowej), sposoby badania rozkładu dwóch i więcej zmiennych</a></td>
     <td></td>
   </tr>
   <tr>
