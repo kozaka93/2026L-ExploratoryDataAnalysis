@@ -43,7 +43,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: dplyr, tidyr, idea ggplot2</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab02">R: dplyr, tidyr, idea ggplot2</a></td>
     <td></td>
   </tr>
   <tr>
