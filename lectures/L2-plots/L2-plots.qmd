@@ -1,0 +1,513 @@
+---
+title: "Sposoby badania rozkładu zmiennych"
+subtitle: "Wstęp do Eksploracji Danych"
+author: "Anna Kozak"
+format: revealjs
+editor: visual
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+## Sposoby badania rozkładu zmiennych
+
+Sposoby zależą od typów zmiennych. Prawidłowe określenie na wstępie typów zmiennych pozwala na bezbłędny wybór metody/wizualizacji do analizy rozkładu.
+
+## Dane
+
+Dane o pingwinach, dostępne w pakiecie `palmerpenguins`. Zbiór danych jest podobny do popularnego zbioru danych `iris`.
+
+```{r, echo=TRUE}
+library(palmerpenguins)
+data(penguins) 
+head(penguins)
+```
+
+## Zmienne (kolumny)
+
+-   `species`: gatunek (Adélie, Chinstrap, Gentoo)
+-   `island`: wyspa (Biscoe, Dream, Torgersen)
+-   `bill_length_mm` / `bill_depth_mm`: wymiary dzioba
+-   `flipper_length_mm`: długość skrzydła
+-   `body_mass_g`: masa ciała
+-   `sex`: płeć
+-   `year`: rok
+
+## Typy zmiennych
+
+-   *zmienne jakościowe*
+-   *zmienne ilościowe*
+
+## Określamy typy zmiennych
+
+-   `species`: jakościowa, nominalna
+-   `island`: jakościowa, nominalna
+-   `bill_length_mm` / `bill_depth_mm`: ilościowa, ilorazowa
+-   `flipper_length_mm`: ilościowa, ilorazowa
+-   `body_mass_g`: ilościowa, ilorazowa
+-   `sex`: jakościowa, binarna
+-   `year`: ilościowa, przedziałowa
+
+## Badanie rozkładu jednej zmiennej, zmienna jakościowa
+
+-   tabela z licznościami
+-   wykres słupkowy
+-   wykres kołowy
+
+Poniższe przykłady ze zmienną jakościową **species (gatunek)**.
+
+## Rozkład zmiennej **species**
+
+Tabela liczności
+
+```{r}
+#| echo: true
+#| warning: false
+table(penguins$species)
+```
+
+Tabela częstości występowania
+
+```{r}
+#| echo: true
+#| warning: false
+prop.table(table(penguins$species))*100
+```
+
+## Rozkład zmiennej **species** - `barplot()`
+
+Wykres słupkowy z wykorzystaniem funkcji `barplot()`.
+
+! Przed użyciem funkcji `barplot()` należy zliczyć obserwacje.
+
+```{r}
+#| echo: true
+#| warning: false
+barplot(table(penguins$species),
+        main = "Liczność gatunków")
+```
+
+## Rozkład zmiennej **species** - `geom_bar()`
+
+Wykres słupkowy z wykorzystaniem funkcji `geom_bar()`
+
+! `geom_bar()` - zlicza występowanie kategorii
+
+::::: columns
+::: {.column width="40%"}
+```{r}
+#| echo: true
+#| eval: false
+
+
+ggplot(data = penguins,
+       mapping = aes(x = species)) + 
+  geom_bar(color = "#ea71ea", fill = "purple") +
+  labs(title = "Rozkład zmiennej species ", 
+       x = "",
+       y = "Liczność") +
+  theme_minimal()
+
+```
+:::
+
+::: {.column width="60%"}
+```{r}
+#| echo: false
+#| warning: false
+
+
+ggplot(data = penguins,
+       mapping = aes(x = species)) + 
+  geom_bar(color = "#ea71ea", fill = "purple") +
+  labs(title = "Rozkład zmiennej species ", 
+       x = "",
+       y = "Liczność") +
+  theme_minimal()
+
+```
+:::
+:::::
+
+## Rozkład zmiennej **species** - `geom_col()`
+
+Wykres słupkowy z wykorzystaniem funkcji `geom_col()`
+
+! `geom_col()` - podajemy w x/y kategorię i odpowiednio w x/y ich liczność
+
+::::: columns
+::: {.column width="40%"}
+```{r}
+#| echo: true
+#| eval: false
+
+df <- data.frame(table(penguins$species))
+names(df) <- c("Gatunek", "Count")
+
+ggplot(df,
+       aes(x = Gatunek ,
+           y = Count)) + 
+  geom_col(color = "blue", fill = "white") +
+  labs(title = "Rozkład zmiennej species", 
+       x = "",
+       y = "Liczność") +
+  theme_bw() 
+```
+:::
+
+::: {.column width="60%"}
+```{r}
+#| echo: false
+#| warning: false
+
+df <- data.frame(table(penguins$species))
+names(df) <- c("Gatunek", "Count")
+
+ggplot(df,
+       aes(x = Gatunek ,
+           y = Count)) + 
+  geom_col(color = "blue", fill = "white") +
+  labs(title = "Rozkład zmiennej species", 
+       x = "",
+       y = "Liczność") +
+  theme_bw() 
+```
+:::
+:::::
+
+## Rozkład zmiennej **species** - wykres kołowy
+
+Wykres kołowy w base R wymaga zliczenia występowania obserwacji.
+
+```{r}
+#| echo: true
+#| warning: false
+df <- table(penguins$species)
+pie(df)
+```
+
+## Rozkład zmiennej **species** - wykres kołowy
+
+W pakiecie `ggplot2` nie istnieje funkcja do rysowania wykresu kołowego. Aby taki wykres uzyskać należy przygotować wykres słupkowy i zmienić współrzędne na biegunowe.
+
+::::: columns
+::: {.column width="40%"}
+```{r}
+#| echo: true
+#| eval: false
+
+df <- data.frame(table(penguins$species))
+names(df) <- c("Gatunek", "Count")
+
+ggplot(df,
+       aes(x = "",
+           y = Count,
+           fill = Gatunek)) + 
+  geom_col(weight = 1) +
+  labs(title = "Rozkład zmiennej species", 
+       x = "",
+       y = "Liczność") +
+  coord_polar("y") +
+  theme_void()
+```
+:::
+
+::: {.column width="60%"}
+```{r}
+#| echo: false
+#| warning: false
+
+df <- data.frame(table(penguins$species))
+names(df) <- c("Gatunek", "Count")
+
+ggplot(df,
+       aes(x = "",
+           y = Count,
+           fill = Gatunek)) + 
+  geom_col(weight = 1) +
+  labs(title = "Rozkład zmiennej species", 
+       x = "",
+       y = "Liczność") +
+  coord_polar("y") +
+  theme_void()
+```
+:::
+:::::
+
+## Badanie rozkładu jednej zmiennej, zmienna ilościowa
+
+-   histogram
+-   wykres pudełkowy
+-   wykres skrzypcowy
+-   wykres gęstości
+
+## Rozkład zmiennej **body_mass_g** - histogram
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+hist(penguins$body_mass_g,
+     main = "Histogram zmiennej body_mass_g",
+     xlab = "body_mass_g",
+     col = "skyblue", 
+     breaks = 20)
+
+```
+
+## Rozkład zmiennej **body_mass_g** - histogram
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+ggplot(data = penguins, aes(x = body_mass_g)) +
+  geom_histogram(fill = "steelblue", color = "white", binwidth = 20) +
+  labs(title = "Rozkład zmiennej body_mass_g",
+       x = "Masa [g]",
+       y = "Częstość")
+# bins - liczba przedziałów
+# binwidth - długość przedziałów
+```
+
+## Rozkład zmiennej **body_mass_g** - histogram
+
+Ogarniczenie tylko do jedego gatunku pingwinów.
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+ggplot(data = penguins[penguins$species == "Adelie", ], aes(x = body_mass_g)) +
+  geom_histogram(fill = "steelblue",
+                 color = "white",
+                 binwidth = 20) +
+  labs(title = "Rozkład zmiennej body_mass_g - gatunek Adelie", x = "Masa [g]", y = "Częstość")
+#bins - liczba przedziałów
+```
+
+## Rozkład zmiennej **body_mass_g** - wykres pudełkowy
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+boxplot(penguins$body_mass_g, main = "Rozkład zmiennej body_mass_g")
+```
+
+## Kwantyle
+
+```{r}
+#| echo: true
+#| warning: false
+quantile(penguins$body_mass_g, c(0.1, 0.13, 0.98, 0.25), na.rm = TRUE)
+```
+
+## Rozkład zmiennej **body_mass_g** - wykres pudełkowy
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+ggplot(data = penguins, aes(y = body_mass_g)) +
+  geom_boxplot() +
+  labs(title = "Rozkład zmiennej body_mass_g",
+       y = "Masa [g]")
+```
+
+## Rozkład zmiennej **body_mass_g** - wykres gęstości
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+options(scipen = 10) # notacja naukowa
+
+ggplot(penguins, aes(x = body_mass_g)) +
+  geom_density(alpha = 0.25) +
+  labs(title = "Rozkład zmiennej body_mass_g",
+       x = "Masa [g]",
+       y = "Gęstość") +
+  theme_minimal()
+```
+
+## Badanie rozkładu dwóch zmiennych, zmienna jakościowa i zmienna ilościowa
+
+-   wykres gęstości
+-   wykres skrzypcowy
+-   wykres pudełkowy
+
+## Rozkład zmiennej **body_mass_g** vs **species** - wykres gęstości
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+options(scipen = 10)
+
+ggplot(penguins, aes(x = body_mass_g, fill = species)) +
+  geom_density(alpha = 0.25) + # alpha - przeźroczystość
+  labs(x = "Masa [g]",
+      y = "Gęstość",
+      title = "Rozkład gęstości w podziale na gatunek",
+      fill = "Gatunek") + 
+  theme_minimal()
+```
+
+## Rozkład zmiennej **body_mass_g** vs **species** - wykres boxplot
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+options(scipen = 10)
+
+ggplot(penguins, aes(x = body_mass_g, y = species)) +
+  geom_boxplot() +
+  labs(x = "Masa [g]",
+      y = " ",
+      title = "Rozkład gęstości w podziale na gatunek") +
+  theme_minimal()
+```
+
+## Rozkład zmiennej **body_mass_g** vs **species** - wykres skrzypcowy
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+options(scipen = 10)
+
+ggplot(penguins, aes(x = body_mass_g, y = species)) +
+  geom_violin() +
+  labs(x = "Masa [g]",
+      y = " ",
+      title = "Rozkład gęstości w podziale na gatunek") +
+  theme_minimal()
+```
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+options(scipen = 10)
+
+ggplot(penguins, aes(x = body_mass_g, y = species)) +
+  geom_boxplot() +
+  geom_jitter() +
+  labs(x = "Masa [g]", y = " ", title = "Rozkład gęstości w podziale na gatunek") +
+  theme_minimal()
+```
+
+## Badanie rozkładu dwóch zmiennych, zmienne jakościowe
+
+-   tabela
+-   mapa ciepła (heatmapa)
+
+## Tabela
+
+```{r}
+table(penguins[, c("island", "species")])
+```
+
+## Mapa ciepła (heatmapa)
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| fig-align: "center"
+
+
+penguins %>% 
+  group_by(species, island) %>% 
+  summarise(n = n()) %>% 
+  ggplot(aes(x = species , y = island, fill = n)) +
+  geom_tile() +
+  scale_fill_gradient(low="pink", high ="purple") +
+  theme_minimal() +
+  labs(title = "Rozkład zmiennej island i species",
+       x = "Gatunek",
+       y = "Wyspa",
+       fill = "Liczność")
+```
+
+## Badanie rozkładu dwóch zmiennych, zmienne ilościowe
+
+-   wykres punktowy
+-   wykres korelacji
+
+## Wykres punktowy - base R
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+plot(penguins$body_mass_g, penguins$flipper_length_mm,
+     main = "Zależnośc masy od długości skrzydła",
+     xlab = "Masa [g]",
+     ylab = "Długość skrzydła [mm]")
+```
+
+## Wykres punktowy - ggplot2
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm,
+                     shape = species)) +
+  geom_point() +
+  labs(title = "Zależnośc masy od długości skrzydła",
+     x = "Masa [g]",
+     y = "Długość skrzydła [mm]",
+     shape = "Gatunek") +
+  theme(legend.position = "top")
+```
+
+## Koleracja
+
+Domyślnie jest używana korelacja Pearsona.
+
+$r_{xy} = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}$
+
+Można wyliczać również współczynnik korelacji Spearmana, który bada monotoniczność.
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+df <-  na.omit(penguins) # usuwamy braki danych
+cat("Współczynnik Pearsona")
+cor(df$body_mass_g, df$flipper_length_mm)
+cat("Współczynnik Spearmana")
+cor(df$body_mass_g, df$flipper_length_mm, method = c("spearman"))
+```
+
+## Wykres gęstości
+
+```{r}
+#| echo: true
+#| warning: false
+#| fig-align: "center"
+
+ggplot(penguins,
+       aes(x = body_mass_g, y = flipper_length_mm, color = species)) +
+  geom_density_2d() +
+  labs(
+    title = "Zależnośc masy od długości skrzydła",
+    x = "Masa [g]",
+    y = "Długość skrzydła [mm]",
+    shape = "Gatunek"
+  ) +
+  theme_minimal()
+```
