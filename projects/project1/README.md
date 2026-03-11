@@ -6,7 +6,7 @@ Pierwszy projekt poświęcony jest eksploracji danych dotyczących Polski. Jego 
 
 Wykresy mogą być wykonane w dowolnym narzędziu i złożone w plakat z użyciem dowolnej techniki. Podczas *Wykładu 9 i Projektu 7  (15-04-2026)* zespoły przedstawiają krótkie prezentacje swojej pracy podczas sesji plakatowej.
 
-Plakat powinien składać się ze zbioru przynajmniej trzech spójnych tematycznie wykresów oraz komentarzy/opisów do wykresów. Projekt wykonuje się w zespole 3 osobowym. Kody źródłowe wykresów i plakat w postaci elektronicznej należy umieścić na GitHubie.
+Plakat powinien składać się ze zbioru przynajmniej trzech spójnych tematycznie wykresów oraz komentarzy/opisów do wykresów. Projekt wykonuje się w zespole 3 osobowym. Kody źródłowe wykresów i plakat w postaci elektronicznej należy umieścić w zespole na MS Teams.
 
 ## Zajęcia projektowe
 
@@ -35,13 +35,13 @@ Aby uzyskać punkty za realizację kamieni miliowych zespół jest zobowiązany 
   <tr>
     <td>1</td>
     <td>25-02-2026</td>
-    <td>Wprowadzenie do projektu, podział na zespoły.</td>
+    <td><i>Wprowadzenie do projektu, podział na zespoły.</i></td>
     <td></td>
   </tr>
   <tr>
     <td>2</td>
     <td>11-03-2026</td>
-    <td>Określenie tematyki plakatu, źródła danych</td>
+    <td><i>Określenie tematyki plakatu, źródła danych</i></td>
     <td>1</td>
   </tr>
   <tr>
@@ -63,8 +63,8 @@ Aby uzyskać punkty za realizację kamieni miliowych zespół jest zobowiązany 
 
 ## Zajęcia projektowe, Lista TO DO
 
-- [ ] Wpisać zespół do pliku PROJEKT1/ZESPOLY.xlsx (do dnia 04.03.2026)
-- [ ] Zapisać się na konsultacje projektowe - wpisać swój numer zespołu w pliku PROJEKT1/KAMIENIE MILOWE.xlsx (proszę zwrócić uwagę na zakładki i daty!)
+- [x] Wpisać zespół do pliku PROJEKT1/ZESPOLY.xlsx (do dnia 04.03.2026)
+- [x] Zapisać się na konsultacje projektowe - wpisać swój numer zespołu w pliku PROJEKT1/KAMIENIE MILOWE.xlsx (proszę zwrócić uwagę na zakładki i daty!)
 - [ ] Przed zajęciami projektowymi przygotować roboczą prezentację w formacie .pdf
 - [ ] Przed zajęciami projektowymi umieścić prezentację w folderze zgodnym z opisem na MS Teams
 
