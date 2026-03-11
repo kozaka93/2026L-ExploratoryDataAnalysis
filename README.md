@@ -50,13 +50,13 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">11-03</td>
     <td>2</td>
     <td>projekt</td>
-    <td>P1: pomysł, źródło danych</td>
+    <td><i>P1: pomysł, źródło danych</i></td>
     <td>P1 (1p)</td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: ggplot2 - badanie rozkładu jednej zmiennej, wielu zmiennych</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab03">R: ggplot2 - badanie rozkładu jednej zmiennej, wielu zmiennych</a></td>
     <td></td>
   </tr>
   <tr>
