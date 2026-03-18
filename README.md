@@ -69,7 +69,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: ggplot2 - skale, osie, kolor, legenda</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab04">R: ggplot2 - skale, osie, kolor, legenda</a></td>
     <td>PD1 (6p)</td>
   </tr>
   <tr>
