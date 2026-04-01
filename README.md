@@ -95,7 +95,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: ggplot2 - mapa Polski, patchwork, ggrepel</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab06">R: ggplot2 - mapa Polski, patchwork, ggrepel</a></td>
     <td>PD2 (6p)</td>
   </tr>
   <tr>
