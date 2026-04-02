@@ -89,7 +89,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">01-04</td>
     <td>2</td>
     <td>wykład</td>
-    <td>Nie popełniaj tych błędów</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/lectures/L4-mistakes.pdf">Nie popełniaj tych błędów</a></td>
     <td></td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>RMarkdown: generowanie raportów z analizą danych</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab07">R: patchwork, ggrepel,</a> RMarkdown: generowanie raportów z analizą danych</td>
     <td></td>
   </tr>
   <tr>
