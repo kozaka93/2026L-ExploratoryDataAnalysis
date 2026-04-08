@@ -102,7 +102,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">08-04</td>
     <td>2</td>
     <td>projekt</td>
-    <td>P1: gotowe wykresy, projekt plakatu </td>
+    <td><i>P1: gotowe wykresy, projekt plakatu</i></td>
     <td>P1 (2p)</td>
   </tr>
   <tr>
