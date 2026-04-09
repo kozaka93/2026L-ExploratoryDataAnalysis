@@ -108,7 +108,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab07">R: patchwork, ggrepel,</a> RMarkdown: generowanie raportów z analizą danych</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab07">R: patchwork, ggrepel,</a></td>
     <td></td>
   </tr>
   <tr>
@@ -125,7 +125,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: plotly</td>
+    <td>R: plotly, leaflet</td>
     <td></td>
   </tr>
   <tr>
@@ -138,7 +138,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: grafy, tekst</td>
+    <td>R: grafy, tekst,  RMarkdown: generowanie raportów z analizą danych</td>
     <td>PD 3 (6p)</td>
   </tr>
   <tr>
