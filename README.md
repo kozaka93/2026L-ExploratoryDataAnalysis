@@ -108,7 +108,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab07">R: patchwork, ggrepel,</a></td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab07">R: patchwork, ggrepel</a></td>
     <td></td>
   </tr>
   <tr>
