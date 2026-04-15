@@ -115,7 +115,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="3">15-04</td>
     <td>1</td>
     <td>wykład</td>
-    <td rowspan="2">Oddanie P1</td>
+    <td rowspan="2"><i>Oddanie P1</i></td>
     <td rowspan="2">P1 (19p)</td>
   </tr>
   <tr>
@@ -125,7 +125,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: plotly, leaflet</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab08">R: plotly, leaflet</a></td>
     <td></td>
   </tr>
   <tr>
