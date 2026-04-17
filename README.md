@@ -115,7 +115,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="3">15-04</td>
     <td>1</td>
     <td>wykład</td>
-    <td rowspan="2"><i>Oddanie P1</i></td>
+    <td rowspan="2"><i><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/projects/project1">Oddanie P1</a></i></td>
     <td rowspan="2">P1 (19p)</td>
   </tr>
   <tr>
