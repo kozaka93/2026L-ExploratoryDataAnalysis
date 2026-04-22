@@ -138,7 +138,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: grafy, tekst,  RMarkdown: generowanie raportów z analizą danych</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab09">R: grafy, RMarkdown: generowanie raportów z analizą danych</a></td>
     <td>PD 3 (6p)</td>
   </tr>
   <tr>
@@ -152,14 +152,14 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>lab</td>
     <td>R: Shiny 1</td>
-    <td>PD 4 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="2">06-05</td>
     <td>2</td>
     <td>wykład</td>
     <td>Dashboardy, historia, IBCS</td>
-    <td></td>
+    <td>PD 4 (6p)</td>
   </tr>
   <tr>
     <td>2</td>
