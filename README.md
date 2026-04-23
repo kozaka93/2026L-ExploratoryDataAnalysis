@@ -132,7 +132,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">22-04</td>
     <td>2</td>
     <td>wykład</td>
-    <td>Wizualizacja grafów, tekst</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/lectures/L5-graphs.pdf">Wizualizacja grafów</a>, <a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/lectures/L5-text.R">wizualizacja tekstu</a></td>
     <td></td>
   </tr>
   <tr>
@@ -151,7 +151,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>R: Shiny 1</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab10">R: Shiny 1</a></td>
     <td></td>
   </tr>
   <tr>
