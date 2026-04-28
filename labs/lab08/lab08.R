@@ -197,7 +197,7 @@ leaflet() %>%
   addMarkers(lng = 21.007135613409062, lat = 52.22217811913538, popup = "Wydział MiNI")
 
 # Punkty na mapie (Seattle)
-df <- read.csv("https://raw.githubusercontent.com/MI2-Education/2023Z-DataVisualizationTechniques/main/homeworks/hw1/house_data.csv")
+df <- read.csv("house_data.csv")
 sam <- sample(1:nrow(df), 0.01 * nrow(df))
 leaflet(df[sam,]) %>% 
   addTiles() %>% 
