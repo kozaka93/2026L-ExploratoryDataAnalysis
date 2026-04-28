@@ -145,7 +145,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">29-04</td>
     <td>2</td>
     <td>projekt</td>
-    <td>P2: pomysł, źródło danych</td>
+    <td><i>P2: pomysł, źródło danych</i></td>
     <td>P2 (1p)</td>
   </tr>
   <tr>
