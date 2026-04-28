@@ -1,0 +1,182 @@
+---
+title: "Podstawowe raporty w R"
+author: "Anna Kozak"
+date: "2026-04-22"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    theme: united
+---
+
+# Raport
+
+W raporcie możemy ustawić spis treści za który odpowiada parametr `toc`. 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Tutaj warto wczytać biblioteki, których używamy, dodatkowo w opcjach chunk (komórka z kodem) można ustawić message = FALSE.
+
+
+library(dplyr)
+library(ggplot2)
+library(plotly)
+```
+# Raport z analizą danych
+
+Raport składa się z kilku rozdziałów. Główne rozdziały są oznaczone `#`. Im więcej dodamy `#` tym bardziej zagnieżdzony będzie nasz podrozdział.
+
+
+## To jest podrozdział rozdziału "Raport z analizą danych"
+
+### A tu kolejny podrozdział
+
+# Komentarze
+
+Komentarze standardowo są poprzez zaznaczenie kodu i użycie kombinacji klawiszy Ctrl + Shift + C.
+
+Na przykład: 
+<!-- Dodawanie komentarzy i kodu -->
+
+# Markdown - formatowanie
+
+Formatowanie tekstu:
+
+- **pogrubienie** czcionki
+- *kursywa*
+
+Opcje załączania grafik/tabel:
+
+1. tworzenie ich w R
+2. załączanie z pliku/ strony jako plik graficzny
+
+Można również generować kod R w tekście używając `r Sys.time()`.
+
+## Globalne opcje dot. wywołania kodu
+
+- echo - odpowiada za załączanie kodu z komórki w raporcie
+- include - odpowiada za dodawanie komórek i wyników w raporcie (ale są wywoływane)
+- eval - odpowiada za wywołanie kodu (kod może byc zwarty ale bez wywołania)
+- warning -
+- message - 
+- fig_height/fig_width ...
+
+### Customize appearance
+
+- Spis treści 
+  1. `toc`
+  2. `toc_float`
+  3. `toc_depth`
+- Code folding - `code_fold`
+- Styl 
+  1. `theme` - [https://bootswatch.com/3/](https://bootswatch.com/3/)
+  2. CSS
+
+
+# Współpraca z kodem R (ale nie tylko)
+
+```{r}
+
+df <- iris
+colnames(iris)
+```
+
+```{r}
+head(iris) 
+```
+
+```{r}
+head(iris ) %>% 
+  knitr::kable( caption = 'Liczność poszczególnych klas')
+```
+
+## Tabele 
+
+|x|x|x|
+|-|-|-|
+|1|2|3|
+
+
+## Możemy również umieszczać wyrażenia w LaTeX
+
+$$\int_{0}^{\infty}x^2dx$$
+$$\int_{0}^{1}x^2dx$$
+
+## Dołączanie wykresów
+
+```{r}
+# Zadanie
+# Narysuj wykres w plotly zależności ceny od liczby karatów i kolorem oznacz rozdzaj cięcia
+plot_ly(diamonds,
+        x = ~price,
+        y = ~carat,
+        color =~cut)
+
+```
+
+<!-- Zmiana wielkości okna -->
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig_height=10, fig_width=10,fig.cap="Podpis"}
+
+# Zadanie
+# Narysuj wykres w plotly zależności ceny od liczby karatów i kolorem oznacz rozdzaj cięcia
+plot_ly(diamonds,
+        x = ~price,
+        y = ~carat,
+        color =~cut)
+
+
+```
+
+
+
+## Referencje
+
+YAML: zmiana `html_document` -> `bookdown::html_document2:`
+
+\@ref(fig:plot2)
+
+# Zadanie 1
+
+Dla zmiennych ciągłych utwórz histogram w ggplot2.
+
+```{r message = FALSE}
+
+numeric_col <- colnames(iris)[sapply(iris,class) == 'numeric']
+
+for (var in numeric_col){
+  p <- ggplot(iris)+
+    geom_histogram(aes_string(x = var))+
+    labs(title = var)
+  print(p)
+}
+
+```
+
+
+# Interaktywne elementy raportu
+
+## interaktywne tabele
+
+```{r}
+
+?DT::datatable
+
+iris %>% 
+  group_by(Species) %>% 
+  summarise(cnt = n()) %>% 
+  DT::datatable()
+```
+
+```{r }
+iris %>% 
+  group_by(Species) %>% 
+  summarise(cnt = n()) %>% 
+  DT::datatable(width=10, options = list(dom = 't'))
+```
+
+Więcej o opcjach formatowania tabeli z pakietu `DT` można znaleźć [https://rstudio.github.io/DT/options.html](https://rstudio.github.io/DT/options.html)
+
