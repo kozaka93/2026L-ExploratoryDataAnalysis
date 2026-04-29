@@ -71,7 +71,7 @@ Ocena z projektu jest wystawiana na podstawie agregacji ocen zaproponowanych prz
 
 ## Oddanie projektu
 
-Czas na wykonanie projektu jest do  **09-10-2026**, 23:59 - do tego dnia będą przyjmowane zgłoszenia rozwiązań.
+Czas na wykonanie projektu jest do  **09-06-2026**, 23:59 - do tego dnia będą przyjmowane zgłoszenia rozwiązań.
 
 Folder `nazwisko1_nazwisko2_nazwisko3` w postaci .zip przesyła jedna osoba z zespołu. Folder musi zawierać poniżej wymienione pliki, w przypadku braku któregoś z nich praca może nie być oceniana.
 - nagranie w formacie .mp4 (długości 4 minut) o nazwie `nazwisko1_nazwisko2_nazwisko3`,
