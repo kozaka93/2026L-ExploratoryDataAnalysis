@@ -159,13 +159,13 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>wykład</td>
     <td>Dashboardy, historia, IBCS</td>
-    <td>PD 4 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
     <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab11">R: Shiny 2</a></td>
-    <td></td>
+    <td>PD 4 (6p)</td>
   </tr>
   <tr>
     <td rowspan="2">13-05</td>
@@ -178,14 +178,14 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>lab</td>
     <td>Python: pandas, numpy</td>
-    <td></td>
+    <td>PD5 (6p)</td>
   </tr>
   <tr>
     <td rowspan="3">20-05</td>
     <td>1</td>
     <td>projekt</td>
     <td>Konsultacje</td>
-    <td>PD5 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td>1</td>
