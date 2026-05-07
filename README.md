@@ -158,7 +158,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="2">06-05</td>
     <td>2</td>
     <td>wykład</td>
-    <td>Dashboardy, historia, IBCS</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/lectures/L6-dashboards.pdf">Dashboardy,</a> <a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/lectures/L6-IBCS-history.pdf">historia, IBCS</a></td>
     <td></td>
   </tr>
   <tr>
