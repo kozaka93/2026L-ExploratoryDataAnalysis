@@ -177,26 +177,26 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/labs/lab12/lab12.ipynb">Python: pandas, numpy</a></td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/labs/lab12">Python: pandas, numpy</a></td>
     <td></td>
   </tr>
   <tr>
     <td rowspan="3">20-05</td>
     <td>1</td>
     <td>projekt</td>
-    <td>Konsultacje</td>
+    <td><i>Konsultacje</i></td>
     <td></td>
   </tr>
   <tr>
     <td>1</td>
     <td>wykład</td>
-    <td>Test</td>
+    <td><i>Test</i></td>
     <td>Test (10p)</td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>Python: matplotlib, seaborn</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/labs/lab13">Python: matplotlib, seaborn</a></td>
     <td> PD5 (6p)</td>
   </tr>
   <tr>
