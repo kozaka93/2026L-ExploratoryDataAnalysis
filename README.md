@@ -197,14 +197,14 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>lab</td>
     <td>Python: matplotlib, seaborn</td>
-    <td></td>
+    <td> PD5 (6p)</td>
   </tr>
   <tr>
     <td rowspan="2">27-05</td>
     <td>2</td>
     <td>projekt</td>
     <td>P2: gotowe wykresy, prototyp wyglądu aplikacji</td>
-    <td>P2 (2p) <br> PD5 (6p)</td>
+    <td>P2 (2p)</td>
   </tr>
   <tr>
     <td>2</td>
