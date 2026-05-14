@@ -210,7 +210,7 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>lab</td>
     <td>Python: plotly</td>
-    <td>PD6 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="3">10-06</td>
@@ -227,7 +227,7 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>lab</td>
     <td>Python: EDA</td>
-    <td></td>
+    <td>PD6 (6p)</td>
   </tr>
 </tbody></table>
 
