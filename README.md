@@ -178,7 +178,7 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>lab</td>
     <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/labs/lab12/lab12.ipynb">Python: pandas, numpy</a></td>
-    <td>PD5 (6p)</td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="3">20-05</td>
@@ -204,7 +204,7 @@ Wstęp do eksploracji danych składa się z:
     <td>2</td>
     <td>projekt</td>
     <td>P2: gotowe wykresy, prototyp wyglądu aplikacji</td>
-    <td>P2 (2p)</td>
+    <td>P2 (2p) <br> PD5 (6p)</td>
   </tr>
   <tr>
     <td>2</td>
