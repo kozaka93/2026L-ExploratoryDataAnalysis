@@ -196,20 +196,20 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/labs/lab13">Python: matplotlib, seaborn</a></td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/blob/main/labs/lab13">Python: matplotlib 1</a></td>
     <td> PD5 (6p)</td>
   </tr>
   <tr>
     <td rowspan="2">27-05</td>
     <td>2</td>
     <td>projekt</td>
-    <td>P2: gotowe wykresy, prototyp wyglądu aplikacji</td>
+    <td><i>P2: gotowe wykresy, prototyp wyglądu aplikacji</i></td>
     <td>P2 (2p)</td>
   </tr>
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>Python: plotly</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab14">Python: matplotlib 2, seaborn </a></td>
     <td></td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>Python: EDA</td>
+    <td>Python: plotly, EDA</td>
     <td>PD6 (6p)</td>
   </tr>
 </tbody></table>
