@@ -75,8 +75,12 @@ Czas na wykonanie projektu jest do  **09-06-2026**, 23:59 - do tego dnia będą 
 
 Folder `nazwisko1_nazwisko2_nazwisko3` w postaci .zip przesyła jedna osoba z zespołu. Folder musi zawierać poniżej wymienione pliki, w przypadku braku któregoś z nich praca może nie być oceniana.
 - nagranie w formacie .mp4 (długości 4 minut) o nazwie `nazwisko1_nazwisko2_nazwisko3`,
+- prezentacja w formacie .pdf ("stare vs nowe") o nazwie `nazwisko1_nazwisko2_nazwisko3`,
 - wszystkie kody służące do odtworzenia projektu (na ile to możliwe) w podfolderze `kody`,
 - plik Word zawierający krótki opis raportu/aplikacji, zrzut aplikacji (screen) lub/oraz link.
+
+
+Podczas wykładu w dniu **10-06-2026** zespoły przedstawią krótkie prezentacje (do 5 minut) ukazujące różnice między wynikami P1 a P2. 
 
 
 ## Materiały
