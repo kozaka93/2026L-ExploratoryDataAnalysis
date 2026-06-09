@@ -216,7 +216,7 @@ Wstęp do eksploracji danych składa się z:
     <td rowspan="3">10-06</td>
     <td>1</td>
     <td>wykład</td>
-    <td rowspan="2">Oddanie P2</td>
+    <td rowspan="2"><i>Oddanie P2</i></td>
     <td rowspan="2">P2 (15p)</td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ Wstęp do eksploracji danych składa się z:
   <tr>
     <td>2</td>
     <td>lab</td>
-    <td>Python: plotly, EDA</td>
+    <td><a href="https://github.com/kozaka93/2026L-ExploratoryDataAnalysis/tree/main/labs/lab15">Python: plotly, EDA</a></td>
     <td>PD6 (6p)</td>
   </tr>
 </tbody></table>
